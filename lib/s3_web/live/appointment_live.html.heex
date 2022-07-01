@@ -1,0 +1,33 @@
+<h1>Agendamento Online</h1>
+<p>
+  Escolha o médico e agende sua consulta no melhor dia e horário para você.
+</p>
+<.form let={f} for={@changeset} phx-change="selection" phx-submit="save">
+  <%= hidden_input f, :patient_id %>
+
+  <%= label f, :expertise_id, "Especialidade" %>
+  <%= select f, :expertise_id, Enum.map(@expertises, &{&1.name, &1.id}), prompt: "Selecione uma especialidade" %>
+
+  <%= label f, :doctor_id, "Médico" %>
+  <%= select f, :doctor_id,
+      Enum.map(@doctors, &{"#{&1.full_name} (#{&1.professional_registration_number})", &1.id}),
+      disabled: Enum.empty?(@doctors),
+      prompt: "Selecione um médico"
+  %>
+  <%= label f, :scheduled_to, "Data do agendamento" %>
+  <%= select f, :scheduled_to,
+      @availabilities,
+      disabled: Enum.empty?(@availabilities),
+      prompt: "Selecione uma data disponível"
+  %>
+  <%= label f, :hour, "Horário do agendamento" %>
+  <%= select f, :hour,
+      @hours,
+      disabled: Enum.empty?(@hours),
+      prompt: "Selecione um horário disponível"
+  %>
+
+  <div class="steps">
+    <%= submit "Agendar" %>
+  </div>
+</.form>

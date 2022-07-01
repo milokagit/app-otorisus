@@ -1,0 +1,102 @@
+## "msgid"s in this file come from POT (.pot) files.
+##
+## Do not add, change, or remove "msgid"s manually here as
+## they're tied to the ones in the corresponding POT file
+## (with the same domain).
+##
+## Use "mix gettext.extract --merge" or "mix gettext.merge"
+## to merge POT files into PO files.
+msgid ""
+msgstr ""
+"Language: en\n"
+"Plural-Forms: nplurals=2\n"
+
+#, elixir-autogen, elixir-format
+#: lib/s3_web/live/start_live.html.heex:28
+msgid "Next"
+msgstr ""
+
+#, elixir-autogen, elixir-format
+#: lib/s3_web/templates/page/index.html.heex:2
+msgid "Welcome to %{name}!"
+msgstr ""
+
+#, elixir-autogen, elixir-format
+#: lib/s3_web/live/start_live.html.heex:15
+msgid "Email"
+msgstr ""
+
+#, elixir-autogen, elixir-format
+#: lib/s3_web/live/start_live.html.heex:11
+msgid "Full name"
+msgstr ""
+
+#, elixir-autogen, elixir-format
+#: lib/s3_web/live/start_live.html.heex:23
+msgid "Health insurance type"
+msgstr ""
+
+#, elixir-autogen, elixir-format
+#: lib/s3_web/live/start_live.html.heex:19
+msgid "Phone number"
+msgstr ""
+
+#, elixir-autogen, elixir-format
+#: lib/s3_web/live/start_live.html.heex:7
+msgid "Tax number"
+msgstr ""
+
+#, elixir-autogen, elixir-format
+#: lib/s3_web/live/appointment_live.html.heex:11
+msgid "Doctor name"
+msgstr ""
+
+#, elixir-autogen, elixir-format
+#: lib/s3_web/live/appointment_live.html.heex:8
+msgid "Expertise"
+msgstr ""
+
+#, elixir-autogen, elixir-format
+#: lib/s3_web/live/appointment_live.html.heex:31
+msgid "Schedule"
+msgstr ""
+
+#, elixir-autogen, elixir-format
+#: lib/s3_web/live/appointment_live.html.heex:15
+msgid "Select a doctor"
+msgstr ""
+
+#, elixir-autogen, elixir-format
+#: lib/s3_web/live/appointment_live.html.heex:9
+msgid "Select a expertise"
+msgstr ""
+
+#, elixir-autogen, elixir-format, fuzzy
+#: lib/s3_web/live/start_live.ex:39
+msgid "patient confirmed"
+msgstr ""
+
+#, elixir-autogen, elixir-format
+#: lib/s3_web/live/appointment_live.html.heex:23
+msgid "Hour"
+msgstr ""
+
+#, elixir-autogen, elixir-format, fuzzy
+#: lib/s3_web/live/appointment_live.html.heex:17
+msgid "Schedule for"
+msgstr ""
+
+#, elixir-autogen, elixir-format, fuzzy
+#: lib/s3_web/live/appointment_live.html.heex:21
+msgid "Select a date"
+msgstr ""
+
+#, elixir-autogen, elixir-format, fuzzy
+#: lib/s3_web/live/appointment_live.html.heex:27
+msgid "Select a hour"
+msgstr ""
+
+#, elixir-autogen, elixir-format
+#: lib/s3_web/live/appointment_live.ex:91
+msgid "appointment scheduled"
+msgstr ""

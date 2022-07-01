@@ -1,0 +1,38 @@
+<%= if @secure.authorize do %>
+  <h1>Agendamentos</h1>
+  <%= if Enum.empty?(@appointments) do %>
+    <p>Nenhum agendamento realizado</p>
+  <% else %>
+    <table>
+      <tr>
+        <th>Paciente</th>
+        <th>E-mail</th>
+        <th>Telefone</th>
+        <th>Plano de Saúde</th>
+        <th>Médico</th>
+        <th>Especialidade</th>
+        <th>Data do Agendamento</th>
+        <th>Horário</th>
+        <th>Agendado em</th>
+      </tr>
+      <%= for appointment <- @appointments do %>
+        <tr>
+          <td><%= appointment.patient.full_name %></td>
+          <td><%= appointment.patient.email %></td>
+          <td><%= appointment.patient.phone_number %></td>
+          <td><%= appointment.patient.health_insurance_type %></td>
+          <td><%= appointment.doctor.full_name %></td>
+          <td><%= appointment.expertise.name %></td>
+          <td><%= appointment.scheduled_to %></td>
+          <td><%= appointment.hour %></td>
+          <td><%= appointment.inserted_at |> Timex.format!("%d/%m/%Y", :strftime) %></td>
+        </tr>
+      <% end %>
+    </table>
+  <% end %>
+<% else %>
+  <form method="get" action="/admin" phx-submit="passcode">
+    <input type="password" name="passcode" placeholder="Digite o código de acesso"/>
+    <input type="submit" value="Acessar">
+  </form>
+<% end %>

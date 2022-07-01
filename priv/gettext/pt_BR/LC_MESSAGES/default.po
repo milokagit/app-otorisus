@@ -1,0 +1,102 @@
+## "msgid"s in this file come from POT (.pot) files.
+##
+## Do not add, change, or remove "msgid"s manually here as
+## they're tied to the ones in the corresponding POT file
+## (with the same domain).
+##
+## Use "mix gettext.extract --merge" or "mix gettext.merge"
+## to merge POT files into PO files.
+msgid ""
+msgstr ""
+"Language: pt_BR\n"
+"Plural-Forms: nplurals=2\n"
+
+#, elixir-autogen, elixir-format
+#: lib/s3_web/live/start_live.html.heex:28
+msgid "Next"
+msgstr "Próximo"
+
+#, elixir-autogen, elixir-format
+#: lib/s3_web/templates/page/index.html.heex:2
+msgid "Welcome to %{name}!"
+msgstr "Bem vindo %{name}"
+
+#, elixir-autogen, elixir-format
+#: lib/s3_web/live/start_live.html.heex:15
+msgid "Email"
+msgstr "E-mail"
+
+#, elixir-autogen, elixir-format
+#: lib/s3_web/live/start_live.html.heex:11
+msgid "Full name"
+msgstr "Nome Completo"
+
+#, elixir-autogen, elixir-format
+#: lib/s3_web/live/start_live.html.heex:23
+msgid "Health insurance type"
+msgstr "Escolha seu plano de saúde"
+
+#, elixir-autogen, elixir-format
+#: lib/s3_web/live/start_live.html.heex:19
+msgid "Phone number"
+msgstr "Informe o número de telefone"
+
+#, elixir-autogen, elixir-format
+#: lib/s3_web/live/start_live.html.heex:7
+msgid "Tax number"
+msgstr "Número do CPF"
+
+#, elixir-autogen, elixir-format
+#: lib/s3_web/live/appointment_live.html.heex:11
+msgid "Doctor name"
+msgstr "Médico"
+
+#, elixir-autogen, elixir-format
+#: lib/s3_web/live/appointment_live.html.heex:8
+msgid "Expertise"
+msgstr "Especialidade"
+
+#, elixir-autogen, elixir-format
+#: lib/s3_web/live/appointment_live.html.heex:31
+msgid "Schedule"
+msgstr "Agendar"
+
+#, elixir-autogen, elixir-format
+#: lib/s3_web/live/appointment_live.html.heex:15
+msgid "Select a doctor"
+msgstr "Selecione um médico"
+
+#, elixir-autogen, elixir-format
+#: lib/s3_web/live/appointment_live.html.heex:9
+msgid "Select a expertise"
+msgstr "Selecione uma especialidade"
+
+#, elixir-autogen, elixir-format
+#: lib/s3_web/live/start_live.ex:39
+msgid "patient confirmed"
+msgstr "Paciente confirmado!"
+
+#, elixir-autogen, elixir-format
+#: lib/s3_web/live/appointment_live.html.heex:23
+msgid "Hour"
+msgstr "Horário do agendamento"
+
+#, elixir-autogen, elixir-format
+#: lib/s3_web/live/appointment_live.html.heex:17
+msgid "Schedule for"
+msgstr "Data do agendamento"
+
+#, elixir-autogen, elixir-format
+#: lib/s3_web/live/appointment_live.html.heex:21
+msgid "Select a date"
+msgstr "Selecione uma data disponível"
+
+#, elixir-autogen, elixir-format
+#: lib/s3_web/live/appointment_live.html.heex:27
+msgid "Select a hour"
+msgstr "Selecione um horário disponível"
+
+#, elixir-autogen, elixir-format
+#: lib/s3_web/live/appointment_live.ex:91
+msgid "appointment scheduled"
+msgstr "Agendamento realizado com sucesso!"

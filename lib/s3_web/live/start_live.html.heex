@@ -1,0 +1,30 @@
+<h1>Agendamento Online</h1>
+<p>
+  Olá, vamos iniciar o seu agendamento, nos informe alguns dados para identificarmos
+  você e conseguir entrar em contato.
+</p>
+<.form let={f} for={@changeset} phx-change="validate" phx-submit="next">
+  <%= label f, :tax_number, "Número do CPF" %>
+  <%= text_input f, :tax_number %>
+  <%= error_tag f, :tax_number %>
+
+  <%= label f, :full_name, "Nome Completo" %>
+  <%= text_input f, :full_name %>
+  <%= error_tag f, :full_name %>
+
+  <%= label f, :email, "E-mail" %>
+  <%= text_input f, :email, placeholder: "mail@mail.com" %>
+  <%= error_tag f, :email %>
+
+  <%= label f, :phone_number, "Informe o número de contato" %>
+  <%= text_input f, :phone_number, placeholder: "(xx) xxxxx-xxxx" %>
+  <%= error_tag f, :phone_number %>
+
+  <%= label f, :health_insurance_type, "Escolha seu plano de saúde" %>
+  <%= select f, :health_insurance_type, Ecto.Enum.mappings(S3.Patient, :health_insurance_type) %>
+  <%= error_tag f, :health_insurance_type %>
+
+  <div class="steps">
+    <%= submit "Próximo" %>
+  </div>
+</.form>
